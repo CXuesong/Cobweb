@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f38ce77d-4757-4073-8575-e2b226331cad</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Cobweb.py</StartupFile>
+    <StartupFile>CorpusFromWP.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
+    <WorkingDirectory>./workdir</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Cobweb</Name>
     <RootNamespace>Cobweb</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Cobweb.py" />
+    <Compile Include="localconfig.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CorpusFromWP.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
