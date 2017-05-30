@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f38ce77d-4757-4073-8575-e2b226331cad</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CorpusFromWP.py</StartupFile>
+    <StartupFile>Word2VecTest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>./workdir</WorkingDirectory>
@@ -30,6 +30,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Segmentation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Word2VecTest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Word2VecTrain.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
