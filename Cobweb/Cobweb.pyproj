@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f38ce77d-4757-4073-8575-e2b226331cad</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Word2VecBuilder.py</StartupFile>
+    <StartupFile>XGB.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>./workdir</WorkingDirectory>
@@ -44,6 +44,7 @@
     <Compile Include="Word2VecTrain.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="XGB.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
