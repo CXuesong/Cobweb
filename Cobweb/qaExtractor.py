@@ -15,7 +15,7 @@ def extractEntry(entryText: str):
     if len(items) > 2:
         return QaEntry(int(items[0]) != 0, items[1], items[2])
     else :
-        return QaEntry(None, items[1], int(items[2]))
+        return QaEntry(None, items[0], items[1])
 
 def entriesFromFile(path: str):
     entries = []
@@ -23,4 +23,4 @@ def entriesFromFile(path: str):
         while True:
             line = input.readline()
             if not line: break
-            yield extractEntry(line.strip())
+            yield extractEntry(line.strip(" "))
