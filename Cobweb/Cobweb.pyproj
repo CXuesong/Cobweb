@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f38ce77d-4757-4073-8575-e2b226331cad</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>XGB.py</StartupFile>
+    <StartupFile>Doc2VecTrain.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>./workdir</WorkingDirectory>
@@ -26,21 +26,27 @@
     <Compile Include="CombineCorpus.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Doc2VecTrain.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="localconfig.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CorpusFromWP.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MlUtility.py" />
     <Compile Include="qaExtractor.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Segmentation.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Doc2VecBuilder.py" />
     <Compile Include="Word2VecBuilder.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Doc2VecTest.py" />
     <Compile Include="Word2VecTest.py">
       <SubType>Code</SubType>
     </Compile>

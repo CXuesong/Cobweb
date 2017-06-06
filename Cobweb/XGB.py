@@ -37,10 +37,10 @@ def Predict() :
 
     with open("Result" + PROBLEM_NAME + ".txt", "w") as ofs:
         for i in range(0, Y.shape[0]):
-            if np.isnan(X[i][0]):
-                ofs.write("-100.0")
-            else:
-                ofs.write("{0}".format(Y[i]))
+            value = Y[i]
+            if np.isnan(X[i][0]): value = -100
+            value = np.exp(value)
+            ofs.write("{0}".format(value))
             ofs.write("\n")
 
 def CV() :
